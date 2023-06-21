@@ -46,3 +46,4 @@ To use the model, follow these steps:
 
 The model successfully predicts salaries based on years of experience with a high degree of accuracy. Please refer to the Jupyter Notebook for detailed analysis and code implementation.
 
+Feel Free to use this code and reach out to me in case of doubts or suggestions if any.
