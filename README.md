@@ -1,18 +1,48 @@
-# Introduction
 
-I have created a bsaic machine learning algorithm using Linear regression that predicts the Salary based on the Years of Experience. For this you need to
-have thre required libraries such as Pandas and Matplotlib. I have taken a dataset which contains the salary and years of experience of 30 individuals.
+# Salary Prediction Model
 
-#Steps
+This project aims to build a salary prediction model based on years of experience using linear regression.
 
-**`Cleaning Data-`** Data is the most important aspect for any model to be created. Data in the right format is necessary to create efficient models with 
-least amount of errors. So, upon obtaining the data, the first step is to clean it by checking for `Null values`, `Duplicates`, `Outliers` and checking the `data type` and `structure`.
+## Dataset
 
-**`EDA-`** To develop a linear regression model, it is imperative to have a linear relation between the Feature and Target Variable.
-This can be checked by either plotting the points on a graph to manually check the relation or finding out the correlation between the feature and 
-target variable. A correlation above 0.2 to 1 and below -0.2 to -1 is favourable to state liner relation between the two points.
+The dataset used for training and testing the model contains information about years of experience and corresponding salaries. The dataset has been cleaned and preprocessed.
 
-**`Splitting Data-`** the next step is to split data into two sections so as to train the model on one and test in on the other dataset. I have used
-75:25 ratio to for training and testing respectively using the `train_test_split` function from `sklearn.model_selection` library.
+## Preprocessing
 
-**`Modelling Algorith-`** We use the model y = m^x + c for Linear regression algorithms. USing the Linear Regression 
+The following preprocessing steps were performed on the dataset:
+- Removed unnecessary columns (`Unnamed: 0`).
+- Checked for missing values. No missing values were found.
+- Checked for duplicate data. No duplicate entries were found.
+- Checked for outliers. No outliers were found.
+
+## Exploratory Data Analysis (EDA)
+
+EDA was performed to analyze the relationship between years of experience and salary. A scatter plot was created to visualize the linear relationship between the two variables. A strong positive correlation (0.978) was observed between years of experience and salary.
+
+## Model Training and Evaluation
+
+The dataset was split into training and testing sets. The linear regression algorithm was used to train the model. The model achieved an R-squared score of 94%, indicating a high level of accuracy in predicting salaries based on years of experience.
+
+## Usage
+
+To use the model, follow these steps:
+
+1. Install the required dependencies (e.g., scikit-learn, pandas, matplotlib).
+2. Run the provided code to load the dataset, preprocess the data, train the model, and make predictions.
+3. Adjust the code as needed for your specific use case, such as modifying the dataset or changing the features used for prediction.
+
+## Dependencies
+
+- scikit-learn
+- pandas
+- matplotlib
+
+## Files
+
+- `salary_prediction.ipynb`: Jupyter Notebook containing the code and analysis.
+- `dataset.csv`: CSV file containing the preprocessed dataset.
+
+## Results
+
+The model successfully predicts salaries based on years of experience with a high degree of accuracy. Please refer to the Jupyter Notebook for detailed analysis and code implementation.
+
